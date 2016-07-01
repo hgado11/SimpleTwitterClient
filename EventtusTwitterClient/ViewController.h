@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "STTwitter.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController 
 
-
+- (IBAction)twitterLogin:(id)sender;
+- (void)setOAuthToken:(NSString *)token oauthVerifier:(NSString *)verfier;
 @end
 
