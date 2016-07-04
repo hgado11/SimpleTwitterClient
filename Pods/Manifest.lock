@@ -1,0 +1,27 @@
+PODS:
+  - AFNetworking (1.3.4)
+  - AFOAuth1Client (1.0.0):
+    - AFNetworking (~> 1.3)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - STTwitter (0.2.2)
+  - SVProgressHUD (1.1.3)
+
+DEPENDENCIES:
+  - AFNetworking (~> 1.3)
+  - AFOAuth1Client
+  - SDWebImage
+  - STTwitter
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  AFNetworking: cf8e418e16f0c9c7e5c3150d019a3c679d015018
+  AFOAuth1Client: 51d32174520b54d7e15a8b3dd618a9a5b87a6344
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  STTwitter: eb85d8770ddb0f8989f341cf41ea875e90ac6e7f
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+
+PODFILE CHECKSUM: 868b6f3f799846dc8ce9b17efe0a25d040c2f2c0
+
+COCOAPODS: 1.0.0

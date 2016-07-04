@@ -7,9 +7,15 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "LoginViewController.h"
+#import "AFOAuth1Client.h"
+#import "FollowersTableViewController.h"
+#import "userLoginCredential.h"
 
 @interface AppDelegate ()
+
+- (void)userDidLogin:(id)notification;
+- (void)userDidLogout:(id)notification;
 
 @end
 
@@ -18,12 +24,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSUserDefaults *defaults= [NSUserDefaults standardUserDefaults];
-    if([[[defaults dictionaryRepresentation] allKeys] containsObject:@"kAccessTokenKey"]){
-        
-        NSLog(@"mykey found");
-    }
-    return YES;
+       return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -58,8 +59,14 @@
     
     NSString *token = d[@"oauth_token"];
     NSString *verifier = d[@"oauth_verifier"];
+    NSNotification *notification = [NSNotification notificationWithName:kAFApplicationLaunchedWithURLNotification object:nil userInfo:[NSDictionary dictionaryWithObject:url forKey:kAFApplicationLaunchOptionsURLKey]];
     
-    ViewController *vc = (ViewController *)[[self window] rootViewController];
+    
+    [[NSNotificationCenter defaultCenter] postNotification:notification];
+    
+
+    
+    LoginViewController *vc = (LoginViewController *)[[self window] rootViewController];
     [vc setOAuthToken:token oauthVerifier:verifier];
     
     return YES;
@@ -82,6 +89,22 @@
     
     return md;
 }
+#pragma private methods for handling changes from OAuth1Client notifications
+
+- (void)userDidLogin:(id)notification
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userDidLogout:) name:UserDidLogoutNotification object:nil];
+     FollowersTableViewController *followsTableViewController = [[FollowersTableViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:followsTableViewController];
+    self.window.rootViewController = navigationController;
+}
+
+- (void)userDidLogout:(id)notification
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userDidLogin:) name:UserDidLoginNotification object:nil];
+    self.window.rootViewController = [[LoginViewController alloc] init];
+}
+
 
 
 @end

@@ -1,5 +1,5 @@
 //
-//  userLoginCredential.h
+//  UserLoginCredential.h
 //  EventtusTwitterClient
 //
 //  Created by Hassan Gado on 7/1/16.
@@ -8,23 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
-@interface userLoginCredential : NSObject
 
-@property ( nonatomic, copy) NSString *oauthToken;
+extern NSString *const UserDidLoginNotification;
+extern NSString *const UserDidLogoutNotification;
 
-@property ( nonatomic, copy) NSString *oauthTokenSecret;
-
-@property ( nonatomic, copy) NSString *userID;
-
-@property (nonatomic, copy) NSString *verifier;
-
-@property (nonatomic,copy) NSString * screenName;
+@interface UserLoginCredential : NSObject
+// public static class methods
++ (UserLoginCredential *)currentUser;
++ (void)setCurrentUser:(UserLoginCredential *)currentUser;
 
 
-- (void)initWithToken:(NSString *)token
-           secret:(NSString *)secret
-          verifier:(NSString *)verifier
-       userID:(NSString *)userID
-          sreenName:(NSString *)sreenName;
+
+
+@property (nonatomic, strong) NSDictionary *data;
+
+
+- (id)initWithDictionary:(NSDictionary *)data;
 
 @end

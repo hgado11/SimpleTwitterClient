@@ -11,13 +11,17 @@
 		49841773C05BD9DAAEBE86A8 /* libPods-EventtusTwitterClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84162F1CB728B27C651EE88B /* libPods-EventtusTwitterClientTests.a */; };
 		A65D8C271D25C94000EC5ADC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D8C261D25C94000EC5ADC /* WebViewController.m */; };
 		A65D8C2A1D25F8D800EC5ADC /* userLoginCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D8C291D25F8D800EC5ADC /* userLoginCredential.m */; };
+		A65D8C2D1D297A6A00EC5ADC /* FollowersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D8C2C1D297A6A00EC5ADC /* FollowersTableViewController.m */; };
+		A65D8C331D298B5B00EC5ADC /* TwitterClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D8C321D298B5B00EC5ADC /* TwitterClient.m */; };
+		A65D8C361D299CAD00EC5ADC /* FollowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D8C351D299CAD00EC5ADC /* FollowTableViewCell.m */; };
 		A694467A1D25AB1400E45409 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A69446791D25AB1400E45409 /* main.m */; };
 		A694467D1D25AB1400E45409 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A694467C1D25AB1400E45409 /* AppDelegate.m */; };
-		A69446801D25AB1400E45409 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A694467F1D25AB1400E45409 /* ViewController.m */; };
+		A69446801D25AB1400E45409 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A694467F1D25AB1400E45409 /* LoginViewController.m */; };
 		A69446831D25AB1400E45409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69446811D25AB1400E45409 /* Main.storyboard */; };
 		A69446851D25AB1400E45409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69446841D25AB1400E45409 /* Assets.xcassets */; };
 		A69446881D25AB1400E45409 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69446861D25AB1400E45409 /* LaunchScreen.storyboard */; };
 		A69446931D25AB1500E45409 /* EventtusTwitterClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A69446921D25AB1500E45409 /* EventtusTwitterClientTests.m */; };
+		A6E787841D2A0A00006D7237 /* FInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E787831D2A0A00006D7237 /* FInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +42,18 @@
 		A65D8C261D25C94000EC5ADC /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		A65D8C281D25F8D800EC5ADC /* userLoginCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userLoginCredential.h; sourceTree = "<group>"; };
 		A65D8C291D25F8D800EC5ADC /* userLoginCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userLoginCredential.m; sourceTree = "<group>"; };
+		A65D8C2B1D297A6A00EC5ADC /* FollowersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowersTableViewController.h; sourceTree = "<group>"; };
+		A65D8C2C1D297A6A00EC5ADC /* FollowersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowersTableViewController.m; sourceTree = "<group>"; };
+		A65D8C311D298B5B00EC5ADC /* TwitterClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwitterClient.h; path = ../TwitterClient.h; sourceTree = "<group>"; };
+		A65D8C321D298B5B00EC5ADC /* TwitterClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwitterClient.m; path = ../TwitterClient.m; sourceTree = "<group>"; };
+		A65D8C341D299CAD00EC5ADC /* FollowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowTableViewCell.h; sourceTree = "<group>"; };
+		A65D8C351D299CAD00EC5ADC /* FollowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowTableViewCell.m; sourceTree = "<group>"; };
 		A69446751D25AB1400E45409 /* EventtusTwitterClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventtusTwitterClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69446791D25AB1400E45409 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A694467B1D25AB1400E45409 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A694467C1D25AB1400E45409 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A694467E1D25AB1400E45409 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A694467F1D25AB1400E45409 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A694467E1D25AB1400E45409 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A694467F1D25AB1400E45409 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		A69446821D25AB1400E45409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A69446841D25AB1400E45409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A69446871D25AB1400E45409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +61,8 @@
 		A694468E1D25AB1400E45409 /* EventtusTwitterClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventtusTwitterClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69446921D25AB1500E45409 /* EventtusTwitterClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventtusTwitterClientTests.m; sourceTree = "<group>"; };
 		A69446941D25AB1500E45409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E787821D2A0A00006D7237 /* FInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FInfoViewController.h; sourceTree = "<group>"; };
+		A6E787831D2A0A00006D7237 /* FInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FInfoViewController.m; sourceTree = "<group>"; };
 		B1A35B15DEEFE31386F967C4 /* libPods-EventtusTwitterClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EventtusTwitterClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCA7F829C8EEB1D2C9C3111 /* Pods-EventtusTwitterClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventtusTwitterClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventtusTwitterClient/Pods-EventtusTwitterClient.release.xcconfig"; sourceTree = "<group>"; };
 		E62ADD9DB728D942324155A6 /* Pods-EventtusTwitterClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventtusTwitterClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventtusTwitterClientTests/Pods-EventtusTwitterClientTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,10 +120,12 @@
 		A69446771D25AB1400E45409 /* EventtusTwitterClient */ = {
 			isa = PBXGroup;
 			children = (
+				A65D8C311D298B5B00EC5ADC /* TwitterClient.h */,
+				A65D8C321D298B5B00EC5ADC /* TwitterClient.m */,
 				A694467B1D25AB1400E45409 /* AppDelegate.h */,
 				A694467C1D25AB1400E45409 /* AppDelegate.m */,
-				A694467E1D25AB1400E45409 /* ViewController.h */,
-				A694467F1D25AB1400E45409 /* ViewController.m */,
+				A694467E1D25AB1400E45409 /* LoginViewController.h */,
+				A694467F1D25AB1400E45409 /* LoginViewController.m */,
 				A69446811D25AB1400E45409 /* Main.storyboard */,
 				A69446841D25AB1400E45409 /* Assets.xcassets */,
 				A69446861D25AB1400E45409 /* LaunchScreen.storyboard */,
@@ -121,6 +135,12 @@
 				A65D8C261D25C94000EC5ADC /* WebViewController.m */,
 				A65D8C281D25F8D800EC5ADC /* userLoginCredential.h */,
 				A65D8C291D25F8D800EC5ADC /* userLoginCredential.m */,
+				A65D8C2B1D297A6A00EC5ADC /* FollowersTableViewController.h */,
+				A65D8C2C1D297A6A00EC5ADC /* FollowersTableViewController.m */,
+				A65D8C341D299CAD00EC5ADC /* FollowTableViewCell.h */,
+				A65D8C351D299CAD00EC5ADC /* FollowTableViewCell.m */,
+				A6E787821D2A0A00006D7237 /* FInfoViewController.h */,
+				A6E787831D2A0A00006D7237 /* FInfoViewController.m */,
 			);
 			path = EventtusTwitterClient;
 			sourceTree = "<group>";
@@ -353,9 +373,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65D8C2A1D25F8D800EC5ADC /* userLoginCredential.m in Sources */,
-				A69446801D25AB1400E45409 /* ViewController.m in Sources */,
+				A69446801D25AB1400E45409 /* LoginViewController.m in Sources */,
 				A694467D1D25AB1400E45409 /* AppDelegate.m in Sources */,
+				A65D8C331D298B5B00EC5ADC /* TwitterClient.m in Sources */,
+				A6E787841D2A0A00006D7237 /* FInfoViewController.m in Sources */,
+				A65D8C2D1D297A6A00EC5ADC /* FollowersTableViewController.m in Sources */,
 				A694467A1D25AB1400E45409 /* main.m in Sources */,
+				A65D8C361D299CAD00EC5ADC /* FollowTableViewCell.m in Sources */,
 				A65D8C271D25C94000EC5ADC /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,7 +510,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EventtusTwitterClient/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gadou.EventtusTwitterClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -499,7 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EventtusTwitterClient/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gadou.EventtusTwitterClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
